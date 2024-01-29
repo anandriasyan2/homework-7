@@ -1,0 +1,27 @@
+# Add 'file1' and commit
+git add file1
+git commit -m "Add file1"
+
+# Add 'file2' and commit
+git add file2
+git commit -m "Add file2"
+
+# Add 'file3' and commit
+git add file3
+git commit -m "Add file3"
+
+# Find the commit hash for 'file1' commit
+git log # Copy hash of 'Add file1'
+
+# Revert the 'file1' commit (replace [commit-hash] with the actual hash)
+git revert [commit-hash]
+
+# Find the commit hash for 'file2' commit
+git log # Copy hash of 'Add file2'
+
+# Reset to the 'file2' commit (replace [commit-hash-of-file2] with the actual hash)
+git reset --hard [commit-hash-of-file2]
+
+# Push changes to the remote repository
+git push origin homework-7.1
+
